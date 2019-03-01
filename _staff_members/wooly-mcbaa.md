@@ -1,4 +1,4 @@
 ---
-name: Wooly McBaa
+name: Kjell Kraft
 image: /images/wooly.jpg
 ---
