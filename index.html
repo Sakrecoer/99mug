@@ -1,0 +1,110 @@
+---
+layout: default
+title: 99Muggen
+image-logo:
+---
+
+<header>
+	<div class="container">
+		<div class="column">
+			<div>
+				<h1 class="editable">
+					Fix'd
+				</h1>
+				<p class="editable">
+					Muggen som mussemattan
+				</p>
+				<div class="button">
+					<a href="#donate" class="editable">Kööööp!</a>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<img alt="Sheep" class="editable" src="/uploads/99muggfixd-1.jpg" href="#donate" />
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<h2 class="editable" style="text-align: center;" href="#donate">
+		H&ouml;g &Aring;fyfan faktor.
+	</h2>
+
+	<ul class="thirds">
+		<li>
+			<div class="image">{% include icons/site.html icon="population" %}</div>
+			<h3 class="editable" href="#donate">
+				Vad S&auml;ger Kjell?
+			</h3>
+			<p class="editable" href="#donate">
+				"H&ouml;gkraft kommer rakt ur muggen. Sen &auml;r det bara att klocka m&ouml;&ouml;gen med CV
+			</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="economy" %}</div>
+			<h3 class="editable" href="#donate">
+				Certifierad av Admods
+			</h3>
+			<p class="editable" href="#donate">
+				Pengarna g&aring;r till n&aring;tt bra!
+			</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="conditions" %}</div>
+			<h3 class="editable" href="#donate">
+				H&ouml;g 303 faktor
+			</h3>
+			<p class="editable" href="#donate">
+				Mycket bra &aring;terb&auml;rgning per krona investerad.
+			</p>
+		</li>
+	</ul>
+</div>
+
+
+<div class="container">
+	<hr />
+	<blockquote>
+		<p class="quote editable" href="#donate">
+			The b&auml;sta med en 99mugg &auml;r att det smakar bra med Kjellkraft och Cocta
+		</p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="image"><img class="editable" src="/images/wooly.jpg" alt="Wooly" href="#donate" /></span>
+				<span class="author editable" href="#donate">Kjell</span>
+			</p>
+		</div>
+	</blockquote>
+</div>
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable" href="#donate">
+			Regga nu!
+		</h2>
+	</div>
+</div>
+
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable" href="#donate">Uplyftande Nyheter!</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<div class="posts">
+			{% for post in site.posts %}
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content">
+						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+						<h3>{{ post.title }}</h3>
+
+						{{ post.content }}
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

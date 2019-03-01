@@ -1,0 +1,73 @@
+# ----
+# Site
+
+title: 25 koppar 99mugg
+url: https://nice-gourd.cloudvent.net/
+baseurl:
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Ahfyfan!25 koppar 99mugg, en exkluzif kopp te
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+social:
+  name: 99 Mugg 
+  links:
+    - https://99musik.se
+
+# -----
+# Build
+
+timezone: CET/CEST
+
+collections:
+  staff_members:
+    _hide_content: true
+    _options:
+      image:
+        width: 250
+        height: 250
+
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      _options:
+        content:
+          width: 1880
+          height: 1880
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+donation_embed: 
+newsletter_action: "KOPELINK"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+
+# -----------
+# CloudCannon
+
+_options:
+  header_background_image:
+    width: 1880
+    height: 1880
+  newsletter_background_image:
+    width: 1880
+    height: 1880
