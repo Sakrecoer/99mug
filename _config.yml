@@ -6,6 +6,7 @@ url: https://nice-gourd.cloudvent.net/
 baseurl:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+google_analytics_key: ''
 logo: /siteicon.png
 description: Ahfyfan!25 koppar 99mugg, en exkluzif kopp te
 author:
